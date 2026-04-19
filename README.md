@@ -1,16 +1,29 @@
-# React + Vite
+# Nguyễn Minh Hưng - Interactive Pixel Art Portfolio 🎮
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to the repository of my personal portfolio website. This is not just a standard resume; it's an interactive, game-like "scrollytelling" experience built to showcase my journey as a Software Engineering student and Front-End developer.
 
-Currently, two official plugins are available:
+**Live Demo:** [https://mhung.github.io](https://mhung.github.io)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 🌟 The Concept
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Inspired by classic side-scrolling platformers, this portfolio uses scroll position to drive character animation and background parallax effects. As you scroll down the page, the character moves forward in time and space, passing through different "Levels" of my life, including my education at HCMUT, technical skills, and featured projects.
 
-## Expanding the ESLint configuration
+### Core Features
+* **Scrollytelling Mechanics:** Horizontal scrolling driven by vertical mouse scroll.
+* **Parallax Environments:** Multi-layered pixel art backgrounds creating a sense of depth.
+* **Sprite Animation:** Custom character walk cycles synced perfectly with the scroll progress.
+* **Interactive Modals:** Project details and skill sets revealed as the character approaches specific zones.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🛠️ Tech Stack
+
+This project is built from scratch utilizing modern web technologies:
+
+* **Framework:** React 19 + Vite (for lightning-fast HMR and building)
+* **Styling:** Tailwind CSS (configured for `image-rendering: pixelated` to preserve retro aesthetics)
+* **Animation Engine:** GSAP (GreenSock Animation Platform) + ScrollTrigger plugin
+* **Deployment:** GitHub Actions & GitHub Pages
+
