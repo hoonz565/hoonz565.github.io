@@ -23,7 +23,7 @@ const Projects = () => {
       description: 'An agile platform for student modules built with React 19. Implementing modern agile workflow and providing a seamless interface for student management and interaction.',
       tech: ['React 19', 'Agile Workflow', 'Tailwind CSS'],
       github: 'https://github.com/Khoavan1406-hub/FreelanceEDU.git',
-      // external: '#'
+      external: '#'
     },
     {
       title: 'BKies',
