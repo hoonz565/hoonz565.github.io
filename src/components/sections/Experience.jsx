@@ -89,10 +89,8 @@ const Experience = () => {
                 <h3 className="text-xl md:text-2xl font-semibold text-lightest-slate mb-1">
                   {job.title}{' '}
                   <span className="text-green">
-                    @ <a href={job.url} target="_blank" rel="noreferrer" className="inline-block relative overflow-hidden group">
+                    @ <a href={job.url} target="_blank" rel="noreferrer" className="inline-block hover:text-green/80 transition-colors">
                       {job.company}
-                      <span className="absolute bottom-0 left-0 w-full h-[1px] bg-green opacity-30 transform origin-right transition-transform duration-300 group-hover:scale-x-0"></span>
-                      <span className="absolute bottom-0 left-0 w-full h-[1px] bg-green transform scale-x-0 origin-left transition-transform duration-300 group-hover:scale-x-100"></span>
                     </a>
                   </span>
                 </h3>
