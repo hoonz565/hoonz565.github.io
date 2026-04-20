@@ -10,7 +10,7 @@ const Experience = () => {
       company: 'HCMUT',
       title: 'Computer Science Student',
       range: '2021 - Present',
-      url: '#',
+      url: 'https://hcmut.edu.vn/',
       html: (
         <ul className="text-lg text-slate space-y-4">
           <li className="relative pl-7 before:content-['▹'] before:absolute before:left-0 before:text-green before:mt-1">
@@ -29,7 +29,7 @@ const Experience = () => {
       company: 'Le Hong Phong',
       title: 'Specialized Math Student',
       range: '2020 - 2023',
-      url: '#',
+      url: 'http://www.thpt-lehongphong-tphcm.edu.vn/',
       html: (
         <ul className="text-lg text-slate space-y-4">
           <li className="relative pl-7 before:content-['▹'] before:absolute before:left-0 before:text-green before:mt-1">
@@ -54,7 +54,7 @@ const Experience = () => {
           show: { opacity: 1, y: 0, transition: { duration: 0.6 } }
         }}
       >
-        <SectionHeader index={2} title="Where I've Studied & Worked" />
+        <SectionHeader index={2} title="Where I've Studied" />
 
         <div className="flex flex-col md:flex-row mt-10">
           <div className="flex overflow-x-auto md:flex-col md:overflow-visible border-b border-lightest-navy md:border-b-0 md:border-l md:w-32 mb-8 md:mb-0 relative z-10">
