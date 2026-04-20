@@ -1,32 +1,79 @@
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Fira+Code:wght@400;500;600&display=swap');
 @import "tailwindcss";
 
 @theme {
-  --font-pixel: "Press Start 2P", monospace;
-  --font-sans: "Inter", sans-serif;
+  --color-navy: #0a192f;
+  --color-light-navy: #112240;
+  --color-lightest-navy: #233554;
+  --color-green: #64ffda;
+  --color-green-tint: rgba(100, 255, 218, 0.1);
+  --color-slate: #8892b0;
+  --color-light-slate: #ccd6f6;
+  --color-lightest-slate: #e6f1ff;
+
+  --font-sans: "Inter", -apple-system, system-ui, sans-serif;
+  --font-mono: "Fira Code", monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-navy text-slate font-sans m-0 overflow-x-hidden leading-relaxed antialiased selection:bg-lightest-navy selection:text-lightest-slate;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-lightest-slate font-semibold;
+  }
+
+  a {
+    @apply inline-block transition-colors duration-200 text-green hover:text-green-tint;
+  }
+}
+
+@layer utilities {
+  .section-padding {
+    @apply py-24 mx-auto;
+  }
   
-  --color-sky-light: #87CEEB;
-  --color-sky-dark: #00BFFF;
-  --color-ground-top: #7CFC00;
-  --color-ground-deep: #228B22;
-  --color-ocean-light: #008080;
-  --color-ocean-deep: #000080;
-  --color-city: #2F4F4F;
-  --color-cloud: #FFFFFF;
+  .max-w-content {
+    @apply max-w-[1000px];
+  }
+
+  .font-mono {
+    font-family: var(--font-mono);
+  }
+
+  .btn-v4 {
+    @apply text-green bg-transparent border border-green rounded font-mono transition-all duration-300 inline-block;
+    box-shadow: 0 0 0 0 var(--color-green);
+  }
+
+  .btn-v4:hover {
+    @apply -translate-x-1 -translate-y-1 bg-green-tint;
+    box-shadow: 4px 4px 0 0 var(--color-green);
+  }
+  
+  .btn-v4:active {
+    @apply translate-x-0 translate-y-0;
+    box-shadow: 0 0 0 0 var(--color-green);
+  }
 }
 
-@utility pixelated {
-  image-rendering: pixelated;
+html {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-light-navy) var(--color-navy);
+  scroll-behavior: smooth;
 }
-
-body {
-  margin: 0;
-  overflow-x: hidden;
-  font-family: var(--font-pixel);
-}
-
-/* Hide scrollbar for a cleaner look while maintaining scroll */
 ::-webkit-scrollbar {
-  width: 0px;
-  background: transparent;
+  width: 12px;
+}
+::-webkit-scrollbar-track {
+  background: var(--color-navy);
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--color-light-navy);
+  border: 3px solid var(--color-navy);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color-slate);
 }
