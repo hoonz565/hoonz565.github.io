@@ -22,22 +22,22 @@ const Projects = () => {
       title: 'FreelanceEDU',
       description: 'An agile platform for student modules built with React 19. Implementing modern agile workflow and providing a seamless interface for student management and interaction.',
       tech: ['React 19', 'Agile Workflow', 'Tailwind CSS'],
-      github: '#',
-      external: '#'
+      github: 'https://github.com/Khoavan1406-hub/FreelanceEDU.git',
+      // external: '#'
     },
     {
       title: 'BKies',
       description: 'A mobile-first web application featuring Framer Motion transitions for a highly interactive and smooth user experience. Focused on modern design patterns and responsive layouts.',
       tech: ['React', 'Framer Motion', 'Tailwind CSS'],
-      github: '#',
-      external: '#'
+      github: 'https://github.com/hoonz565/bkies.git',
+      external: 'https://bkies.vercel.app/'
     },
     {
       title: 'Super Tic Tac Toe',
       description: 'A complex 9x9 strategic algorithm game taking Tic Tac Toe to the next level. Built with a focus on game logic, algorithms, and interactive state management.',
       tech: ['JavaScript', 'Algorithms', 'CSS'],
-      github: '#',
-      external: '#'
+      github: 'https://github.com/hoonz565/super-tictactoe.git',
+      external: 'https://super-tictactoe-hung.vercel.app/'
     }
   ];
 
@@ -71,7 +71,7 @@ const Projects = () => {
               <div className={`relative z-20 col-span-12 ${i % 2 === 0 ? 'md:col-span-7 md:col-start-1 md:text-left' : 'md:col-span-7 md:col-start-6 md:text-right'} bg-light-navy md:bg-transparent p-6 md:p-0 rounded shadow-lg md:shadow-none`}>
                 <p className="my-2 text-green font-mono text-[13px] font-normal">Featured Project</p>
                 <h3 className="text-lightest-slate text-2xl md:text-[28px] font-bold mb-5">
-                  <a href={project.external} className="hover:text-green">{project.title}</a>
+                  <a href={project.external} target="_blank" rel="noopener noreferrer" className="hover:text-green">{project.title}</a>
                 </h3>
 
                 <div className={`text-light-slate text-lg z-20 relative ${i % 2 === 0 ? 'md:text-left' : 'md:text-right'} md:bg-light-navy md:p-6 md:rounded md:shadow-lg`}>
@@ -87,10 +87,10 @@ const Projects = () => {
                 </ul>
 
                 <div className={`flex items-center mt-2 ${i % 2 === 0 ? 'justify-start md:justify-start' : 'justify-start md:justify-end'} space-x-4`}>
-                  <a href={project.github} aria-label="GitHub Link" className="text-lightest-slate hover:text-green p-2 transition-colors">
+                  <a href={project.github} target="_blank" rel="noopener noreferrer" aria-label="GitHub Link" className="text-lightest-slate hover:text-green p-2 transition-colors">
                     <GithubIcon />
                   </a>
-                  <a href={project.external} aria-label="External Link" className="text-lightest-slate hover:text-green p-2 transition-colors">
+                  <a href={project.external} target="_blank" rel="noopener noreferrer" aria-label="External Link" className="text-lightest-slate hover:text-green p-2 transition-colors">
                     <ExternalLinkIcon />
                   </a>
                 </div>
@@ -98,7 +98,7 @@ const Projects = () => {
 
               {/* Project Image Placeholder */}
               <div className={`absolute inset-0 opacity-10 md:opacity-100 md:relative w-full h-full md:h-[350px] col-span-12 ${i % 2 === 0 ? 'md:col-span-6 md:col-start-7' : 'md:col-span-6 md:col-start-1 md:row-start-1'} z-10 transition-all group`}>
-                <a href={project.external} className="block w-full h-full bg-green rounded relative overflow-hidden">
+                <a href={project.external} target="_blank" rel="noopener noreferrer" className="block w-full h-full bg-green rounded relative overflow-hidden">
                   <div className="absolute inset-0 w-full h-full bg-navy mix-blend-screen transition-all duration-300 group-hover:bg-transparent"></div>
                   <div className="absolute inset-0 w-full h-full bg-light-navy filter grayscale contrast-100 mix-blend-multiply transition-all duration-300 group-hover:filter-none"></div>
                   <div className="w-full h-full flex items-center justify-center font-mono text-xl text-green/50 opacity-40">
