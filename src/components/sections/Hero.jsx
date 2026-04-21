@@ -39,7 +39,7 @@ const Hero = () => {
         
         <motion.div variants={itemVariants}>
           <h3 className="text-slate text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mt-2 mb-6">
-            Software Engineering Student @ HCMUT
+            Computer Science Student @ HCMUT
           </h3>
         </motion.div>
         
