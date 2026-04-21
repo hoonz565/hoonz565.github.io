@@ -9,7 +9,7 @@ const Experience = () => {
     {
       company: 'HCMUT',
       title: 'Computer Science Student',
-      range: '2021 - Present',
+      range: '2023 - Present',
       url: 'https://hcmut.edu.vn/',
       html: (
         <ul className="text-lg text-slate space-y-4">
