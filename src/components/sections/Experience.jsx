@@ -19,9 +19,6 @@ const Experience = () => {
           <li className="relative pl-7 before:content-['▹'] before:absolute before:left-0 before:text-green before:mt-1">
             Focusing on software engineering principles, algorithms, data structures, and web development technologies.
           </li>
-          <li className="relative pl-7 before:content-['▹'] before:absolute before:left-0 before:text-green before:mt-1">
-            Achieved IELTS 6.5 certification.
-          </li>
         </ul>
       )
     },
@@ -34,9 +31,6 @@ const Experience = () => {
         <ul className="text-lg text-slate space-y-4">
           <li className="relative pl-7 before:content-['▹'] before:absolute before:left-0 before:text-green before:mt-1">
             Studied at Le Hong Phong High School for the Gifted, majoring in Mathematics.
-          </li>
-          <li className="relative pl-7 before:content-['▹'] before:absolute before:left-0 before:text-green before:mt-1">
-            Developed strong analytical and problem-solving skills which later translated well into computer science and algorithm design.
           </li>
         </ul>
       )
