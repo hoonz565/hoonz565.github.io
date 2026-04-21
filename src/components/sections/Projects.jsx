@@ -52,7 +52,7 @@ const Projects = () => {
           show: { opacity: 1, y: 0, transition: { duration: 0.6 } }
         }}
       >
-        <SectionHeader index={3} title="Some Things I've Built" />
+        <SectionHeader index={3} title="Some Things I've Done" />
 
         <ul className="p-0 m-0 list-none mt-12 space-y-12 md:space-y-24">
           {featuredProjects.map((project, i) => (
