@@ -23,8 +23,8 @@ const Projects = () => {
   const featuredProjects = [
     {
       title: 'FreelanceEDU',
-      description: 'An agile platform for student modules built with React 19. Implementing modern agile workflow and providing a seamless interface for student management and interaction.',
-      tech: ['React 19', 'Agile Workflow', 'Tailwind CSS'],
+      description: 'An Agile-based platform facilitating student-client interactions. Collaborated in a 7-member team, taking full ownership of Front-End modules for Jobspace, Applications, and Reviews while utilizing Jira for sprint tracking.',
+      tech: ['React 19', 'Agile', 'Jira', 'Tailwind CSS'],
       github: 'https://github.com/Khoavan1406-hub/FreelanceEDU.git',
       external: 'https://github.com/Khoavan1406-hub/FreelanceEDU.git',
       image: freelanceEDUImg
@@ -103,7 +103,7 @@ const Projects = () => {
               </div>
 
               {/* Project Image */}
-              <div className={`absolute inset-0 opacity-20 md:opacity-100 md:relative w-full h-full md:h-[350px] col-span-12 md:row-start-1 ${i % 2 === 0 ? 'md:col-span-18 md:col-start-4' : 'md:col-span-9 md:col-start-1'} z-10 transition-all group`}>
+              <div className={`absolute inset-0 opacity-20 md:opacity-100 md:relative w-full h-full md:h-[350px] col-span-12 md:row-start-1 ${i % 2 === 0 ? 'md:col-span-9 md:col-start-4' : 'md:col-span-9 md:col-start-1'} z-10 transition-all group`}>
                 <a href={project.external} target="_blank" rel="noopener noreferrer" className="block w-full h-full rounded relative overflow-hidden group">
                   <img 
                     src={project.image} 
