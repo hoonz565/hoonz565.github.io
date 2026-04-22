@@ -16,9 +16,6 @@ const Experience = () => {
           <li className="relative pl-7 before:content-['▹'] before:absolute before:left-0 before:text-green before:mt-1">
             Pursuing a Bachelor's degree in Computer Science at Vietnam National University - Ho Chi Minh City University of Technology.
           </li>
-          <li className="relative pl-7 before:content-['▹'] before:absolute before:left-0 before:text-green before:mt-1">
-            Focusing on software engineering principles, algorithms, data structures, and web development technologies.
-          </li>
         </ul>
       )
     },

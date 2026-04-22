@@ -76,13 +76,6 @@ src/
 ```
 
 ---
-
-## 🛡️ License
-
-This project is open-source and available under the [MIT License](LICENSE).
-
----
-
 Developed with ❤️ by [Nguyễn Minh Hưng](https://github.com/hoonz565)
 
 

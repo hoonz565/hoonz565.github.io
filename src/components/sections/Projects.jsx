@@ -1,6 +1,9 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import SectionHeader from '../SectionHeader';
+import freelanceEDUImg from '../../assets/freelanceEDU.png';
+import bkiesImg from '../../assets/bkies.png';
+import superTicTacToeImg from '../../assets/supertictactoe.png';
 
 const GithubIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
@@ -23,21 +26,24 @@ const Projects = () => {
       description: 'An agile platform for student modules built with React 19. Implementing modern agile workflow and providing a seamless interface for student management and interaction.',
       tech: ['React 19', 'Agile Workflow', 'Tailwind CSS'],
       github: 'https://github.com/Khoavan1406-hub/FreelanceEDU.git',
-      external: '#'
+      external: 'https://github.com/Khoavan1406-hub/FreelanceEDU.git',
+      image: freelanceEDUImg
     },
     {
       title: 'BKies',
       description: 'A mobile-first web application featuring Framer Motion transitions for a highly interactive and smooth user experience. Focused on modern design patterns and responsive layouts.',
       tech: ['React', 'Framer Motion', 'Tailwind CSS'],
       github: 'https://github.com/hoonz565/bkies.git',
-      external: 'https://bkies.vercel.app/'
+      external: 'https://bkies.vercel.app/',
+      image: bkiesImg
     },
     {
       title: 'Super Tic Tac Toe',
       description: 'A complex 9x9 strategic algorithm game taking Tic Tac Toe to the next level. Built with a focus on game logic, algorithms, and interactive state management.',
       tech: ['JavaScript', 'Algorithms', 'CSS'],
       github: 'https://github.com/hoonz565/super-tictactoe.git',
-      external: 'https://super-tictactoe-hung.vercel.app/'
+      external: 'https://super-tictactoe-hung.vercel.app/',
+      image: superTicTacToeImg
     }
   ];
 
@@ -68,7 +74,7 @@ const Projects = () => {
               className="relative grid grid-cols-12 gap-2 items-center"
             >
               {/* Project Content */}
-              <div className={`relative z-20 col-span-12 ${i % 2 === 0 ? 'md:col-span-7 md:col-start-1 md:text-left' : 'md:col-span-7 md:col-start-6 md:text-right'} bg-light-navy md:bg-transparent p-6 md:p-0 rounded shadow-lg md:shadow-none`}>
+              <div className={`relative z-20 col-span-12 md:row-start-1 ${i % 2 === 0 ? 'md:col-span-3 md:col-start-1 md:text-left' : 'md:col-span-3 md:col-start-10 md:text-right'} bg-light-navy md:bg-transparent p-6 md:p-0 rounded shadow-lg md:shadow-none`}>
                 <p className="my-2 text-green font-mono text-[13px] font-normal">Featured Project</p>
                 <h3 className="text-lightest-slate text-2xl md:text-[28px] font-bold mb-5">
                   <a href={project.external} target="_blank" rel="noopener noreferrer" className="hover:text-green">{project.title}</a>
@@ -96,14 +102,16 @@ const Projects = () => {
                 </div>
               </div>
 
-              {/* Project Image Placeholder */}
-              <div className={`absolute inset-0 opacity-10 md:opacity-100 md:relative w-full h-full md:h-[350px] col-span-12 ${i % 2 === 0 ? 'md:col-span-6 md:col-start-7' : 'md:col-span-6 md:col-start-1 md:row-start-1'} z-10 transition-all group`}>
-                <a href={project.external} target="_blank" rel="noopener noreferrer" className="block w-full h-full bg-green rounded relative overflow-hidden">
-                  <div className="absolute inset-0 w-full h-full bg-navy mix-blend-screen transition-all duration-300 group-hover:bg-transparent"></div>
-                  <div className="absolute inset-0 w-full h-full bg-light-navy filter grayscale contrast-100 mix-blend-multiply transition-all duration-300 group-hover:filter-none"></div>
-                  <div className="w-full h-full flex items-center justify-center font-mono text-xl text-green/50 opacity-40">
-                    [Project Image Placeholder]
-                  </div>
+              {/* Project Image */}
+              <div className={`absolute inset-0 opacity-20 md:opacity-100 md:relative w-full h-full md:h-[350px] col-span-12 md:row-start-1 ${i % 2 === 0 ? 'md:col-span-18 md:col-start-4' : 'md:col-span-9 md:col-start-1'} z-10 transition-all group`}>
+                <a href={project.external} target="_blank" rel="noopener noreferrer" className="block w-full h-full rounded relative overflow-hidden group">
+                  <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" 
+                  />
+                  {/* Subtle overlay on mobile, fully clear on desktop */}
+                  <div className="absolute inset-0 bg-navy/60 md:bg-transparent transition-colors duration-300"></div>
                 </a>
               </div>
             </motion.li>
