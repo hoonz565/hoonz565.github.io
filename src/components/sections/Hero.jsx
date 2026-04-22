@@ -33,19 +33,31 @@ const Hero = () => {
         
         <motion.div variants={itemVariants}>
           <h2 className="text-lightest-slate text-4xl md:text-6xl lg:text-7xl font-bold leading-tight">
-            Nguyễn Minh Hưng.
+            {"Nguyễn Minh Hưng.".split("").map((char, index) => (
+              <motion.span
+                key={index}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{
+                  duration: 0.05,
+                  delay: 0.8 + index * 0.08,
+                }}
+              >
+                {char}
+              </motion.span>
+            ))}
           </h2>
         </motion.div>
         
-        <motion.div variants={itemVariants}>
+        {/* <motion.div variants={itemVariants}>
           <h3 className="text-slate text-4xl md:text-6xl lg:text-7xl font-bold leading-tight mt-2 mb-6">
             Computer Science Student @ HCMUT
           </h3>
-        </motion.div>
+        </motion.div> */}
         
         <motion.div variants={itemVariants}>
           <p className="mt-5 mb-12 max-w-[540px] text-lg text-slate leading-relaxed">
-            I'm a software engineering student specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on accessible, human-centered products and exploring the depths of Front-End development.
+            I'm a software engineering student at <a href="https://hcmut.edu.vn/">HCMUT</a> specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on accessible, human-centered products and exploring the depths of Front-End development.
           </p>
         </motion.div>
         
