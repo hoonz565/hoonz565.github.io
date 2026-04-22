@@ -2,7 +2,7 @@
 
 Welcome to the repository of my personal portfolio. This project is a modern, high-performance web application designed to showcase my skills, experience, and projects as a Software Engineering student at Ho Chi Minh City University of Technology (HCMUT).
 
-**Live Demo:** [https://mhung.github.io](https://mhung.github.io)
+**Live Demo:** [https://hoonz565.github.io](https://hoonz565.github.io)
 
 ---
 
