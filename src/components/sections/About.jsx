@@ -1,7 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import SectionHeader from '../SectionHeader';
-import myPhoto from '../../assets/photo.jpg';
+import myPhoto from '../../assets/photos.jpg';
 
 const About = () => {
   const skills = [
