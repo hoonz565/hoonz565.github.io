@@ -49,8 +49,8 @@ const About = () => {
             </ul>
           </div>
 
-          <div className="relative group max-w-[300px] w-full mx-auto">
-            <div className="relative rounded transition-all duration-300 transform group-hover:-translate-x-1 group-hover:-translate-y-1 z-10 w-full overflow-hidden border-2 border-green">
+          <div className="relative max-w-[300px] w-full mx-auto z-0">
+            <div className="relative rounded z-10 w-full overflow-hidden">
               <img 
                 src={myPhoto} 
                 alt="Hung" 
@@ -58,7 +58,7 @@ const About = () => {
               />
             </div>
             {/* Outline Box */}
-            <div className="absolute top-0 left-0 border-2 border-green rounded w-full h-full transition-all duration-300 translate-x-4 translate-y-4 group-hover:translate-x-3 group-hover:translate-y-3 -z-10"></div>
+            <div className="absolute top-0 left-0 border-2 border-green rounded w-full h-full translate-x-4 translate-y-4 -z-10"></div>
           </div>
         </div>
       </motion.div>
