@@ -5,6 +5,9 @@ import freelanceEDUImg from '../../assets/freelanceEDU.png';
 import bkiesImg from '../../assets/bkies.png';
 import superTicTacToeImg from '../../assets/supertictactoe.png';
 import extensionImg from '../../assets/extension.png';
+import extensionAfterImg from '../../assets/extension-after.png';
+import supertictactoeAfterImg from '../../assets/super-tictactoe-after.png';
+import supertictactoeBeforeImg from '../../assets/super-tictactoe-before.png';
 
 const GithubIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
@@ -44,7 +47,8 @@ const Projects = () => {
       tech: ['JavaScript', 'Algorithms', 'CSS'],
       github: 'https://github.com/hoonz565/super-tictactoe.git',
       external: 'https://super-tictactoe-hung.vercel.app/',
-      image: superTicTacToeImg
+      image: supertictactoeBeforeImg,
+      hoverImage: supertictactoeAfterImg
     },
     {
       title: 'HCMUT Internship Filter Extension',
@@ -52,7 +56,8 @@ const Projects = () => {
       tech: ['JavaScript', 'HTML', 'CSS'],
       github: 'https://github.com/hoonz565/hcmut-internship-filter-extension.git',
       external: '',
-      image: extensionImg
+      image: extensionImg,
+      hoverImage: extensionAfterImg
     }
   ];
 
@@ -112,15 +117,24 @@ const Projects = () => {
               </div>
 
               {/* Project Image */}
-              <div className={`absolute inset-0 opacity-20 md:opacity-100 md:relative w-full h-full md:h-[350px] col-span-12 md:row-start-1 ${i % 2 === 0 ? 'md:col-span-9 md:col-start-4' : 'md:col-span-9 md:col-start-1'} z-10 transition-all group`}>
-                <a href={project.external} target="_blank" rel="noopener noreferrer" className="block w-full h-full rounded relative overflow-hidden group">
+              <div className={`absolute inset-0 opacity-20 md:opacity-100 md:relative w-full h-full md:h-[350px] col-span-12 md:row-start-1 ${i % 2 === 0 ? 'md:col-span-9 md:col-start-4' : 'md:col-span-9 md:col-start-1'} z-10 group`}>
+                <a href={project.external || project.github} target="_blank" rel="noopener noreferrer" className="block w-full h-full rounded relative overflow-hidden">
+                  {/* Primary image */}
                   <img 
                     src={project.image} 
                     alt={project.title} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.03]" 
+                    className={`w-full h-full object-cover transition-opacity duration-500 ${project.hoverImage ? 'group-hover:opacity-0' : ''}`}
                   />
+                  {/* Hover image — only rendered if hoverImage exists */}
+                  {project.hoverImage && (
+                    <img
+                      src={project.hoverImage}
+                      alt={`${project.title} after`}
+                      className="absolute inset-0 w-full h-full object-cover opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+                    />
+                  )}
                   {/* Subtle overlay on mobile, fully clear on desktop */}
-                  <div className="absolute inset-0 bg-navy/60 md:bg-transparent transition-colors duration-300"></div>
+                  <div className="absolute inset-0 bg-navy/60 md:bg-transparent"></div>
                 </a>
               </div>
             </motion.li>
