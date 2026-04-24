@@ -4,6 +4,7 @@ import SectionHeader from '../SectionHeader';
 import freelanceEDUImg from '../../assets/freelanceEDU.png';
 import bkiesImg from '../../assets/bkies.png';
 import superTicTacToeImg from '../../assets/supertictactoe.png';
+import extensionImg from '../../assets/extension.png';
 
 const GithubIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
@@ -44,6 +45,14 @@ const Projects = () => {
       github: 'https://github.com/hoonz565/super-tictactoe.git',
       external: 'https://super-tictactoe-hung.vercel.app/',
       image: superTicTacToeImg
+    },
+    {
+      title: 'HCMUT Internship Filter Extension',
+      description: 'A Chrome extension that visually labels full or outside-HCM companies on the portal, allowing students to instantly hide them and focus entirely on open, conveniently located opportunities.',
+      tech: ['JavaScript', 'HTML', 'CSS'],
+      github: 'https://github.com/hoonz565/hcmut-internship-filter-extension.git',
+      external: '',
+      image: extensionImg
     }
   ];
 
