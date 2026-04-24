@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import SectionHeader from '../SectionHeader';
 import freelanceEDUImg from '../../assets/freelanceEDU.png';
 import bkiesImg from '../../assets/bkies.png';
-import superTicTacToeImg from '../../assets/supertictactoe.png';
 import extensionImg from '../../assets/extension.png';
 import extensionAfterImg from '../../assets/extension-after.png';
 import supertictactoeAfterImg from '../../assets/super-tictactoe-after.png';
