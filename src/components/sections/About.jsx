@@ -33,7 +33,7 @@ const About = () => {
             </p>
             <p>
               Now, I'm pursuing a degree in Computer Science at{' '}
-              <a href="https://hcmut.edu.vn/" className="font-medium">VNUHCM - Ho Chi Minh City University of Technology (HCMUT).</a>
+              <a href="https://hcmut.edu.vn/" className="font-medium" target="_blank">VNUHCM - Ho Chi Minh City University of Technology (HCMUT).</a>
               My main focus these days is building accessible, inclusive products and digital experiences focusing primarily on the Front-End.
             </p>
             <p>
