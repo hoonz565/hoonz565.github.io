@@ -34,7 +34,8 @@ const About = () => {
             <p>
               Now, I'm pursuing a degree in Computer Science at{' '}
               <a href="https://hcmut.edu.vn/" className="font-medium" target="_blank">VNUHCM - Ho Chi Minh City University of Technology (HCMUT).</a>
-              My main focus these days is building accessible, inclusive products and digital experiences focusing primarily on the Front-End.
+
+              When I'm away from the keyboard, you can find me playing badminton, catching a good movie or listening to music.
             </p>
             <p>
               Here are a few technologies I've been working with recently:
