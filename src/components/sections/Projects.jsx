@@ -7,6 +7,8 @@ import extensionImg from '../../assets/extension.png';
 import extensionAfterImg from '../../assets/extension-after.png';
 import supertictactoeAfterImg from '../../assets/super-tictactoe-after.png';
 import supertictactoeBeforeImg from '../../assets/super-tictactoe-before.png';
+import tuongMaskImg from '../../assets/tuong.png';
+import tuongMaskHoverImg from '../../assets/tuongafter.png';
 
 const GithubIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
@@ -24,6 +26,15 @@ const ExternalLinkIcon = () => (
 
 const Projects = () => {
   const featuredProjects = [
+    {
+      title: 'Vietnamese Tuong Mask Archive',
+      description: 'An immersive digital archive of 117 traditional Tuong masks featuring a React-based gallery with smooth animations and a reliable FastAPI backend.',
+      tech: ['React', 'FastAPI', 'Tailwind CSS v4', 'Framer Motion', 'SQLite3'],
+      github: 'https://github.com/hoonz565/tuong-mask-vietnam.git',
+      external: 'https://tuongvn.vercel.app/',
+      image: tuongMaskImg,
+      hoverImage: tuongMaskHoverImg
+    },
     {
       title: 'FreelanceEDU',
       description: 'An Agile-based platform facilitating student-client interactions. Collaborated in a 7-member team, taking full ownership of Front-End modules for Jobspace, Applications, and Reviews while utilizing Jira for sprint tracking.',
