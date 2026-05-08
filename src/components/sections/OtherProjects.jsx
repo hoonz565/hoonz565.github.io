@@ -34,7 +34,7 @@ const otherProjects = [
     description: 'A Chrome extension that visually labels full or outside-HCM companies on the portal, allowing students to instantly hide them and focus entirely on open, conveniently located opportunities.',
     tech: ['JavaScript', 'HTML', 'CSS'],
     github: 'https://github.com/hoonz565/hcmut-internship-filter-extension.git',
-    external: ''
+    external: 'https://chromewebstore.google.com/detail/hcmut-internship-filter/hklenfojmhmabaeodimglmcpoaeoeeka'
   }
 ];
 
