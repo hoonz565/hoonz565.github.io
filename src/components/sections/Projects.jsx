@@ -51,6 +51,15 @@ const Projects = () => {
       external: 'https://bkies.vercel.app/',
       image: bkiesImg
     },
+    {
+      title: 'HCMUT Internship Filter Extension',
+      description: 'A Chrome extension with 200+ active users that streamlines the internship search on the HCMUT portal. It visually filters out full or outside-HCM companies, helping students focus on open, conveniently located opportunities.',
+      tech: ['JavaScript', 'HTML', 'CSS'],
+      github: 'https://github.com/hoonz565/hcmut-internship-filter-extension.git',
+      external: '',
+      image: extensionImg,
+      hoverImage: extensionAfterImg
+    }
     // {
     //   title: 'Super Tic Tac Toe',
     //   description: 'A complex 9x9 strategic algorithm game taking Tic Tac Toe to the next level. Built with a focus on game logic, algorithms, and interactive state management.',
@@ -60,15 +69,7 @@ const Projects = () => {
     //   image: supertictactoeBeforeImg,
     //   hoverImage: supertictactoeAfterImg
     // },
-    // {
-    //   title: 'HCMUT Internship Filter Extension',
-    //   description: 'A Chrome extension that visually labels full or outside-HCM companies on the portal, allowing students to instantly hide them and focus entirely on open, conveniently located opportunities.',
-    //   tech: ['JavaScript', 'HTML', 'CSS'],
-    //   github: 'https://github.com/hoonz565/hcmut-internship-filter-extension.git',
-    //   external: '',
-    //   image: extensionImg,
-    //   hoverImage: extensionAfterImg
-    // }
+    
   ];
 
   return (

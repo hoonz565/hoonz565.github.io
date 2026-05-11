@@ -29,13 +29,13 @@ const otherProjects = [
     github: 'https://github.com/hoonz565/super-tictactoe.git',
     external: 'https://super-tictactoe-hung.vercel.app/'
   },
-  {
-    title: 'HCMUT Internship Filter Extension',
-    description: 'A Chrome extension that visually labels full or outside-HCM companies on the portal, allowing students to instantly hide them and focus entirely on open, conveniently located opportunities.',
-    tech: ['JavaScript', 'HTML', 'CSS'],
-    github: 'https://github.com/hoonz565/hcmut-internship-filter-extension.git',
-    external: 'https://chromewebstore.google.com/detail/hcmut-internship-filter/hklenfojmhmabaeodimglmcpoaeoeeka'
-  }
+  // {
+  //   title: 'HCMUT Internship Filter Extension',
+  //   description: 'A Chrome extension that visually labels full or outside-HCM companies on the portal, allowing students to instantly hide them and focus entirely on open, conveniently located opportunities.',
+  //   tech: ['JavaScript', 'HTML', 'CSS'],
+  //   github: 'https://github.com/hoonz565/hcmut-internship-filter-extension.git',
+  //   external: 'https://chromewebstore.google.com/detail/hcmut-internship-filter/hklenfojmhmabaeodimglmcpoaeoeeka'
+  // }
 ];
 
 const OtherProjects = () => {
