@@ -35,7 +35,6 @@ const otherProjects = [
     tech: ['React', 'Framer Motion', 'Tailwind CSS'],
     github: 'https://github.com/hoonz565/bkies.git',
     external: 'https://bkies.vercel.app/',
-    image: bkiesImg
   }
   // {
   //   title: 'HCMUT Internship Filter Extension',
