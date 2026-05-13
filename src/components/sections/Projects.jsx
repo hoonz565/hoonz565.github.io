@@ -27,6 +27,15 @@ const ExternalLinkIcon = () => (
 const Projects = () => {
   const featuredProjects = [
     {
+      title: 'HCMUT Internship Filter Extension',
+      description: 'A Chrome extension that streamlines the internship search on the HCMUT portal, acquiring 200+ active users within its first 5 days of launch. It visually filters out full or outside-HCM companies, helping students focus on open, conveniently located opportunities.',
+      tech: ['JavaScript', 'HTML', 'CSS'],
+      github: 'https://github.com/hoonz565/hcmut-internship-filter-extension.git',
+      external: '',
+      image: extensionImg,
+      hoverImage: extensionAfterImg
+    },
+    {
       title: 'Vietnamese Tuong Mask Archive',
       description: 'An immersive digital archive of 117 traditional Tuong masks featuring a React-based gallery with smooth animations and a reliable FastAPI backend.',
       tech: ['React', 'FastAPI', 'Tailwind CSS v4', 'Framer Motion', 'SQLite3'],
@@ -50,16 +59,8 @@ const Projects = () => {
       github: 'https://github.com/hoonz565/bkies.git',
       external: 'https://bkies.vercel.app/',
       image: bkiesImg
-    },
-    {
-      title: 'HCMUT Internship Filter Extension',
-      description: 'A Chrome extension that streamlines the internship search on the HCMUT portal, acquiring 200+ active users within its first 5 days of launch. It visually filters out full or outside-HCM companies, helping students focus on open, conveniently located opportunities.',
-      tech: ['JavaScript', 'HTML', 'CSS'],
-      github: 'https://github.com/hoonz565/hcmut-internship-filter-extension.git',
-      external: '',
-      image: extensionImg,
-      hoverImage: extensionAfterImg
     }
+    
     // {
     //   title: 'Super Tic Tac Toe',
     //   description: 'A complex 9x9 strategic algorithm game taking Tic Tac Toe to the next level. Built with a focus on game logic, algorithms, and interactive state management.',
