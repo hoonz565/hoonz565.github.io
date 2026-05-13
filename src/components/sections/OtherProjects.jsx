@@ -29,6 +29,14 @@ const otherProjects = [
     github: 'https://github.com/hoonz565/super-tictactoe.git',
     external: 'https://super-tictactoe-hung.vercel.app/'
   },
+  {
+    title: 'BKies',
+    description: 'A mobile-first web application featuring Framer Motion transitions for a highly interactive and smooth user experience. Focused on modern design patterns and responsive layouts.',
+    tech: ['React', 'Framer Motion', 'Tailwind CSS'],
+    github: 'https://github.com/hoonz565/bkies.git',
+    external: 'https://bkies.vercel.app/',
+    image: bkiesImg
+  }
   // {
   //   title: 'HCMUT Internship Filter Extension',
   //   description: 'A Chrome extension that visually labels full or outside-HCM companies on the portal, allowing students to instantly hide them and focus entirely on open, conveniently located opportunities.',

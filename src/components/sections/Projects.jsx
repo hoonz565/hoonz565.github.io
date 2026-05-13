@@ -51,16 +51,16 @@ const Projects = () => {
       github: 'https://github.com/Khoavan1406-hub/FreelanceEDU.git',
       external: 'https://github.com/Khoavan1406-hub/FreelanceEDU.git',
       image: freelanceEDUImg
-    },
-    {
-      title: 'BKies',
-      description: 'A mobile-first web application featuring Framer Motion transitions for a highly interactive and smooth user experience. Focused on modern design patterns and responsive layouts.',
-      tech: ['React', 'Framer Motion', 'Tailwind CSS'],
-      github: 'https://github.com/hoonz565/bkies.git',
-      external: 'https://bkies.vercel.app/',
-      image: bkiesImg
     }
-    
+    // {
+    //   title: 'BKies',
+    //   description: 'A mobile-first web application featuring Framer Motion transitions for a highly interactive and smooth user experience. Focused on modern design patterns and responsive layouts.',
+    //   tech: ['React', 'Framer Motion', 'Tailwind CSS'],
+    //   github: 'https://github.com/hoonz565/bkies.git',
+    //   external: 'https://bkies.vercel.app/',
+    //   image: bkiesImg
+    // }
+
     // {
     //   title: 'Super Tic Tac Toe',
     //   description: 'A complex 9x9 strategic algorithm game taking Tic Tac Toe to the next level. Built with a focus on game logic, algorithms, and interactive state management.',
@@ -70,7 +70,7 @@ const Projects = () => {
     //   image: supertictactoeBeforeImg,
     //   hoverImage: supertictactoeAfterImg
     // },
-    
+
   ];
 
   return (
@@ -88,8 +88,8 @@ const Projects = () => {
 
         <ul className="p-0 m-0 list-none mt-12 space-y-12 md:space-y-24">
           {featuredProjects.map((project, i) => (
-            <motion.li 
-              key={i} 
+            <motion.li
+              key={i}
               initial="hidden"
               whileInView="show"
               viewport={{ once: true, amount: 0.2 }}
@@ -132,9 +132,9 @@ const Projects = () => {
               <div className={`absolute inset-0 opacity-20 md:opacity-100 md:relative w-full h-full md:h-[350px] col-span-12 md:row-start-1 ${i % 2 === 0 ? 'md:col-span-9 md:col-start-4' : 'md:col-span-9 md:col-start-1'} z-10 group`}>
                 <a href={project.external || project.github} target="_blank" rel="noopener noreferrer" className="block w-full h-full rounded relative overflow-hidden">
                   {/* Primary image */}
-                  <img 
-                    src={project.image} 
-                    alt={project.title} 
+                  <img
+                    src={project.image}
+                    alt={project.title}
                     className={`w-full h-full object-cover transition-opacity duration-500 ${project.hoverImage ? 'group-hover:opacity-0' : ''}`}
                   />
                   {/* Hover image — only rendered if hoverImage exists */}
