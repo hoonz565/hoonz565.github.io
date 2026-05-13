@@ -31,7 +31,7 @@ const Projects = () => {
       description: 'A Chrome extension that streamlines the internship search on the HCMUT portal, acquiring 200+ active users within its first 5 days of launch. It visually filters out full or outside-HCM companies, helping students focus on open, conveniently located opportunities.',
       tech: ['JavaScript', 'HTML', 'CSS'],
       github: 'https://github.com/hoonz565/hcmut-internship-filter-extension.git',
-      external: '',
+      external: 'https://chromewebstore.google.com/detail/hklenfojmhmabaeodimglmcpoaeoeeka?utm_source=item-share-cb',
       image: extensionImg,
       hoverImage: extensionAfterImg
     },
