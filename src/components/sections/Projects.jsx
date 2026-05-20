@@ -9,6 +9,11 @@ import supertictactoeAfterImg from '../../assets/super-tictactoe-after.png';
 import supertictactoeBeforeImg from '../../assets/super-tictactoe-before.png';
 import tuongMaskImg from '../../assets/tuong.png';
 import tuongMaskHoverImg from '../../assets/tuongafter.png';
+import gitDefenseImg from '../../assets/gitdefense.png';
+import gitDefenseAfterImg from '../../assets/gitdefenseafter.png';
+import hanziPracticeImg from '../../assets/hanzi.png';
+import hanziPracticeAfterImg from '../../assets/hanziafter.png';
+
 
 const GithubIcon = () => (
   <svg xmlns="http://www.w3.org/2000/svg" role="img" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
@@ -27,6 +32,24 @@ const ExternalLinkIcon = () => (
 const Projects = () => {
   const featuredProjects = [
     {
+      title: 'GitDefense 🛡️',
+      description: 'A terminal-styled interactive game that turns your GitHub or GitLab contribution grid into a live tower defense battle. Survive the assault as enemy tanks roll across your 52-week commit history, where denser coding activity deals higher damage.',
+      tech: ['React 19', 'Vite 7', 'Framer Motion', 'Tone.js', 'Axios'],
+      github: 'https://github.com/hoonz565/gitdefense.git',
+      external: 'https://gitdefense.vercel.app',
+      image: gitDefenseImg,
+      hoverImage: gitDefenseAfterImg
+    },
+    {
+      title: 'Hanzi Practice 汉字',
+      description: 'A web app for practicing Chinese and Japanese characters, supporting complete HSK (1-9) and JLPT (N1-5) datasets. It features an interactive, stylus-optimized stroke detection canvas and an advanced generator for custom printable A4 worksheets.',
+      tech: ['React 19', 'TanStack Start', 'Tailwind CSS v4', 'TypeScript', 'Cloudflare Workers'],
+      github: 'https://github.com/hoonz565/hanzi-canvas.git',
+      external: 'https://hanzi-canvas.nguyenminhhung05062005.workers.dev/',
+      image: hanziPracticeImg,
+      hoverImage: hanziPracticeAfterImg
+    },
+    {
       title: 'HCMUT Internship Filter Extension',
       description: 'A Chrome extension that streamlines the internship search on the HCMUT portal, acquiring 200+ active users within its first 5 days of launch. It visually filters out full or outside-HCM companies, helping students focus on open, conveniently located opportunities.',
       tech: ['JavaScript', 'HTML', 'CSS'],
@@ -43,15 +66,15 @@ const Projects = () => {
       external: 'https://tuongvn.vercel.app/',
       image: tuongMaskImg,
       hoverImage: tuongMaskHoverImg
-    },
-    {
-      title: 'FreelanceEDU',
-      description: 'An Agile-based platform facilitating student-client interactions. Collaborated in a 7-member team, taking full ownership of Front-End modules for Jobspace, Applications, and Reviews while utilizing Jira for sprint tracking.',
-      tech: ['React 19', 'Agile', 'Jira', 'Tailwind CSS'],
-      github: 'https://github.com/Khoavan1406-hub/FreelanceEDU.git',
-      external: 'https://github.com/Khoavan1406-hub/FreelanceEDU.git',
-      image: freelanceEDUImg
     }
+    // {
+    //   title: 'FreelanceEDU',
+    //   description: 'An Agile-based platform facilitating student-client interactions. Collaborated in a 7-member team, taking full ownership of Front-End modules for Jobspace, Applications, and Reviews while utilizing Jira for sprint tracking.',
+    //   tech: ['React 19', 'Agile', 'Jira', 'Tailwind CSS'],
+    //   github: 'https://github.com/Khoavan1406-hub/FreelanceEDU.git',
+    //   external: 'https://github.com/Khoavan1406-hub/FreelanceEDU.git',
+    //   image: freelanceEDUImg
+    // }
     // {
     //   title: 'BKies',
     //   description: 'A mobile-first web application featuring Framer Motion transitions for a highly interactive and smooth user experience. Focused on modern design patterns and responsive layouts.',

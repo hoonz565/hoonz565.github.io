@@ -35,6 +35,13 @@ const otherProjects = [
     tech: ['React', 'Framer Motion', 'Tailwind CSS'],
     github: 'https://github.com/hoonz565/bkies.git',
     external: 'https://bkies.vercel.app/',
+  },
+  {
+    title: 'FreelanceEDU',
+    description: 'An Agile-based platform facilitating student-client interactions. Collaborated in a 7-member team, taking full ownership of Front-End modules for Jobspace, Applications, and Reviews while utilizing Jira for sprint tracking.',
+    tech: ['React 19', 'Agile', 'Jira', 'Tailwind CSS'],
+    github: 'https://github.com/Khoavan1406-hub/FreelanceEDU.git',
+    external: 'https://github.com/Khoavan1406-hub/FreelanceEDU.git',
   }
   // {
   //   title: 'HCMUT Internship Filter Extension',
@@ -75,7 +82,7 @@ const OtherProjects = () => {
               className="h-full"
             >
               <div className="relative bg-light-navy rounded py-8 px-7 h-full flex flex-col justify-between group shadow-[0_10px_30px_-15px_rgba(2,12,27,0.7)] hover:shadow-[0_20px_30px_-15px_rgba(2,12,27,0.7)]">
-                
+
                 <div>
                   <div className="flex justify-between items-center mb-8 relative z-10">
                     <div className="text-green">
@@ -83,10 +90,10 @@ const OtherProjects = () => {
                     </div>
                     <div className="flex items-center space-x-3 text-light-slate z-10 relative">
                       {project.github && (
-                        <a 
-                          href={project.github} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
+                        <a
+                          href={project.github}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="hover:text-green transition-colors"
                           aria-label="GitHub Link"
                         >
@@ -94,10 +101,10 @@ const OtherProjects = () => {
                         </a>
                       )}
                       {project.external && (
-                        <a 
-                          href={project.external} 
-                          target="_blank" 
-                          rel="noopener noreferrer" 
+                        <a
+                          href={project.external}
+                          target="_blank"
+                          rel="noopener noreferrer"
                           className="hover:text-green transition-colors"
                           aria-label="External Link"
                         >
@@ -108,9 +115,9 @@ const OtherProjects = () => {
                   </div>
 
                   <h3 className="text-lightest-slate text-[22px] font-bold mb-3 group-hover:text-green transition-colors">
-                    <a 
-                      href={project.external || project.github} 
-                      target="_blank" 
+                    <a
+                      href={project.external || project.github}
+                      target="_blank"
                       rel="noopener noreferrer"
                       className="static before:content-[''] before:block before:absolute before:z-0 before:w-full before:h-full before:top-0 before:left-0"
                     >

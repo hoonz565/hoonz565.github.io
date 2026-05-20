@@ -21,7 +21,7 @@ const Header = () => {
 
   return (
     <header className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 px-6 md:px-12 flex items-center justify-between pointer-events-auto h-20 ${isScrolled ? 'bg-navy/85 backdrop-blur-md shadow-lg h-16' : ''}`}>
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}
@@ -33,7 +33,7 @@ const Header = () => {
       <div className="hidden md:flex items-center gap-6 font-mono text-[13px]">
         <ol className="flex justify-between items-center m-0 p-0 list-none">
           {navLinks.map((link, i) => (
-            <motion.li 
+            <motion.li
               key={i}
               initial={{ opacity: 0, y: -20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -52,14 +52,14 @@ const Header = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: navLinks.length * 0.1 }}
         >
-          <a
+          {/* <a
             href="/resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-v4 px-4 py-2"
           >
             Resume
-          </a>
+          </a> */}
         </motion.div>
       </div>
     </header>
