@@ -57,7 +57,7 @@ const Hero = () => {
         
         <motion.div variants={itemVariants}>
           <p className="mt-5 mb-12 max-w-[540px] text-lg text-slate leading-relaxed">
-            I'm a software engineering student at <a href="https://hcmut.edu.vn/">HCMUT</a> specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on accessible, human-centered products and exploring the depths of Front-End development.
+            I'm a software engineering student at <a href="https://hcmut.edu.vn/">HCMUT</a> specializing in building (and occasionally designing) exceptional digital experiences. Currently, I'm focused on accessible, human-centered products and exploring how technology can be leveraged to create value for users and businesses alike.
           </p>
         </motion.div>
         
