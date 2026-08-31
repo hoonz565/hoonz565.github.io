@@ -23,6 +23,13 @@ const ExternalLinkIcon = () => (
 
 const otherProjects = [
   {
+    title: 'Hanzi Practice 汉字',
+    description: 'A web app for practicing Chinese and Japanese characters, supporting complete HSK (1-9) and JLPT (N1-5) datasets. It features an interactive, stylus-optimized stroke detection canvas and an advanced generator for custom printable A4 worksheets.',
+    tech: ['React 19', 'TanStack Start', 'Tailwind CSS v4', 'TypeScript', 'Cloudflare Workers'],
+    github: 'https://github.com/hoonz565/hanzi-canvas.git',
+    external: 'https://hanzi-canvas.nguyenminhhung05062005.workers.dev/',
+  },
+  {
     title: 'Super Tic Tac Toe',
     description: 'A complex 9x9 strategic algorithm game taking Tic Tac Toe to the next level. Built with a focus on game logic, algorithms, and interactive state management.',
     tech: ['JavaScript', 'Algorithms', 'CSS'],

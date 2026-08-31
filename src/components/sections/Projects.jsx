@@ -11,8 +11,7 @@ import tuongMaskImg from '../../assets/tuong.png';
 import tuongMaskHoverImg from '../../assets/tuongafter.png';
 import gitDefenseImg from '../../assets/gitdefense.png';
 import gitDefenseAfterImg from '../../assets/gitdefenseafter.png';
-import hanziPracticeImg from '../../assets/hanzi.png';
-import hanziPracticeAfterImg from '../../assets/hanziafter.png';
+
 
 
 const GithubIcon = () => (
@@ -40,15 +39,7 @@ const Projects = () => {
       image: gitDefenseImg,
       hoverImage: gitDefenseAfterImg
     },
-    {
-      title: 'Hanzi Practice 汉字',
-      description: 'A web app for practicing Chinese and Japanese characters, supporting complete HSK (1-9) and JLPT (N1-5) datasets. It features an interactive, stylus-optimized stroke detection canvas and an advanced generator for custom printable A4 worksheets.',
-      tech: ['React 19', 'TanStack Start', 'Tailwind CSS v4', 'TypeScript', 'Cloudflare Workers'],
-      github: 'https://github.com/hoonz565/hanzi-canvas.git',
-      external: 'https://hanzi-canvas.nguyenminhhung05062005.workers.dev/',
-      image: hanziPracticeImg,
-      hoverImage: hanziPracticeAfterImg
-    },
+
     {
       title: 'HCMUT Internship Filter Extension',
       description: 'A Chrome extension that streamlines the internship search on the HCMUT portal, acquiring 200+ active users within its first 5 days of launch. It visually filters out full or outside-HCM companies, helping students focus on open, conveniently located opportunities.',
