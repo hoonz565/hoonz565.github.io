@@ -11,6 +11,7 @@ import tuongMaskImg from '../../assets/tuong.png';
 import tuongMaskHoverImg from '../../assets/tuongafter.png';
 import gitDefenseImg from '../../assets/gitdefense.png';
 import gitDefenseAfterImg from '../../assets/gitdefenseafter.png';
+import codexImg from '../../assets/codex.png';
 
 
 
@@ -43,7 +44,7 @@ const Projects = () => {
     {
       title: 'HCMUT Internship Filter Extension',
       description: 'A Chrome extension that streamlines the internship search on the HCMUT portal, acquiring 200+ active users within its first 5 days of launch. It visually filters out full or outside-HCM companies, helping students focus on open, conveniently located opportunities.',
-      tech: ['JavaScript', 'HTML', 'CSS'],
+      tech: ['JavaScript', 'Chrome Extension API', 'HTML', 'CSS'],
       github: 'https://github.com/hoonz565/hcmut-internship-filter-extension.git',
       external: 'https://chromewebstore.google.com/detail/hklenfojmhmabaeodimglmcpoaeoeeka?utm_source=item-share-cb',
       image: extensionImg,
@@ -57,6 +58,14 @@ const Projects = () => {
       external: 'https://tuongvn.vercel.app/',
       image: tuongMaskImg,
       hoverImage: tuongMaskHoverImg
+    },
+    {
+      title: 'Codex Reset Notifier Extension',
+      description: 'A Chrome extension that monitors OpenAI Codex quota-reset signals every 15 minutes and delivers email alerts straight to your inbox — so you never have to check status pages manually again.',
+      tech: ['TypeScript', 'Chrome Extension API', 'JavaScript', 'CSS'],
+      github: 'https://github.com/hoonz565/codex-reset-noti-extension.git',
+      external: 'https://chromewebstore.google.com/detail/codex-reset-notifier/oecegicjjbjgdaipabophafmkgaieohl',
+      image: codexImg,
     }
     // {
     //   title: 'FreelanceEDU',
